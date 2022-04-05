@@ -1,0 +1,544 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/style.css" title="" type="" />
+    <script src="https://kit.fontawesome.com/034032e716.js" crossorigin="anonymous"></script>
+    <title></title>
+<style type="text/css" media="all">
+@font-face {
+    font-family: operator-mono;
+    src:url(https://dl.dropbox.com/s/dx4xr95jrm2dv6e/OperatorMono-MediumItalic.woff?dl=0);
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: operator-mono;
+  }
+  body {
+    width: 100%;
+    height: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    flex-direction: column;
+  }
+  header {
+    width: 98%;
+    height: 70px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.3);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    margin: 5px 0px 5px 0px;
+    z-index: 190;
+     backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+   
+  }
+  header > .logo {
+    font-size: 50px;
+    font-weight: bold;
+    left: 20px;
+    position: absolute;
+    -webkit-text-stroke: 1px #00ccff;
+    text-stroke: 1px #00ccff;
+    z-index: 20202;
+  }
+  header > .github {
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+  }
+   .githuba > i {
+    color: black;
+    text-decoration: none;
+  }
+  .container {
+    width: 50px;
+    height: 90px;
+    top: 85vh;
+    right: 30px;
+    z-index: 8800;
+    position: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    column-gap: 3px;
+  }
+  .container > div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container > div > a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    position: relative;
+  }
+   .animationcombo {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -30%;
+  }
+  .animation {
+    height: 50px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .animation-1 {
+    height: 50px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotatez(180deg);
+  }
+  .animation > div {
+    width: 8px;
+    height: 34px;
+    background: black;
+  }
+  .animation-1 > div {
+    width: 8px;
+    height: 34px;
+    background: black;
+  }
+  .dot1 {
+    animation: animate 0.5s linear infinite 0s;
+  }
+  .dot2 {
+    animation: animate 0.5s linear infinite 0.2s;
+  }
+  .dot3 {
+    animation: animate 0.5s linear infinite 0.3s;
+  }
+  .dot4 {
+    animation: animate 0.5s linear infinite 0.4s;
+  }
+  .dot5 {
+    animation: animate 0.5s linear infinite 0.5s;
+  }
+  .dot6 {
+    animation: animate 0.5s linear infinite 0.6s;
+  }
+  .dot7 {
+    animation: animate 0.5s linear infinite 0.7s;
+  }
+  .dot8 {
+    animation: animate 0.5s linear infinite 0.8s;
+  }
+  .dot9 {
+    animation: animate 0.5s linear infinite 0.9s;
+  }
+  .dot10 {
+    animation: animate 0.5s linear infinite 1s;
+  }
+  .dot11 {
+    animation: animate 0.5s linear infinite 1.1s;
+  }
+  .dot12 {
+    animation: animate 0.5s linear infinite 1.2s;
+  }
+  .dot13 {
+    animation: animate 0.5s linear infinite 1.3s;
+  }
+  .dot14 {
+    animation: animate 0.5s linear infinite 1.4s;
+  }
+  .dot15 {
+    animation: animate 0.5s linear infinite 1.5s;
+  }
+  @keyframes animate {
+    100% {
+      transform: rotatex(90deg);
+      filter: hue-rotate(360deg);
+    }
+  }
+ 
+  #welcome {
+    background-image: url('image/Darksky.jpg');
+    overflow: hidden;
+  }
+  .welcome {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .one {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+  .one::before {
+    content: " ";
+    position: absolute;
+    width: 250px;
+    height: 10px;
+    background-color: #fff;
+    animation: oneanimation 4s linear infinite;
+  }
+  @keyframes oneanimation {
+    100% {
+      filter: hue-rotate(360deg);
+      transform: rotatez(360deg);
+    }
+  }
+  .one:hover::before {
+    background-color: red;
+    box-shadow: 1px 1px 20px #32d6ff;
+  }
+  .one:hover {
+    box-shadow: 1px 1px 80px #32d6ff;
+  }
+  .inone {
+    width: 197px;
+    height: 47px;
+    background: rgba( 64, 186, 193, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.30 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  .itemice {
+    width: 100%;
+    display: gird;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+    top: -40px;
+    text-align: center;
+    grid-template-columns: repeat(7,1fr);
+
+  }
+  .itemice2 {
+    transform: translate(40%,70%);
+  }
+  .itemice3 {
+    transform: translate(-70%,40%);
+  }
+  .itemice > .ice {
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    position: absolute;
+    z-index: 666;
+    font-size: 30px;
+  }
+ #ice1 {
+    animation: ice 5s ease-in infinite 0.5s;
+    top: 0px;
+    left: 10%;
+  }
+ #ice2 {
+    animation: ice 5s ease-in infinite 3.1s;
+    top: 0px;
+    left: 20%;
+  }
+ #ice3 {
+    animation: ice 5s ease-in infinite 1.5s;
+    top: 0px;
+    left: 30%;
+  }
+ #ice4 {
+    animation: ice 5s ease-in infinite 1.2s;
+    top: 0px;
+    left: 40%;
+  }
+ #ice5 {
+    animation: ice 5s ease-in infinite 2.5s;
+    top: 0px;
+    left: 50%;
+  }
+ #ice6 {
+    animation: ice 5s ease-in infinite 3s;
+    top: 0px;
+    left: 60%;
+  }
+ #ice7 {
+    animation: ice 5s ease-in infinite 3.5s;
+    top: 0px;
+    left: 70%;
+  }
+  @keyframes ice {
+    100% {
+      top: 109vh;
+      filter: hue-rotate(360deg);
+      transform: rotatex(360deg) rotatez(360deg);
+    }
+  }
+  #info {
+    background-image: url('image/Mix.jpg');
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    position: relative;
+    
+  }
+  .my_skill {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px;
+    overflow: hidden;
+    top: 10px;
+  }
+  .my_skill::before {
+    content: "  ";
+    position: absolute;
+    width: 200%;
+    height: 50px;
+    transform: rotatez(45deg);
+    background-color: rgba(255,168,0,0.5);
+    animation: my_skill 2s linear infinite;
+    left: -200px;
+  }
+  @keyframes my_skill {
+    100% {
+      left: 100px;
+    }
+  }
+  .info1_container {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 0px;
+  }
+  .result_box {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+  }
+  .code_icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+  }
+  .persent {
+    top: 126px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+  }
+  #info1 {
+    background-image: url('image/charli.jpg');
+  }
+  #info2 {
+    background-image: -webkit-repeating-linear-gradient( 45deg, #ffbf00,rgb(0,211,255),#ff0000 2px);
+  }
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        RedRemix
+      </div>
+      <div class="github">
+        <a class="githuba" href="https://github.com/Blacklegion69"><i class="fa-brands fa-github fa-2xs fa-bounce"></i></a>
+      </div>
+    </header>
+    <div class="container">
+        <div class="facebook"><a href="Social/Facebook.html"><i class="fa-brands fa-facebook fa-shake"></i></a></div>
+        <div class="twitter"><a href="Social/Twiter.html"><i class="fa-brands fa-twitter fa-shake"></i></a></div>
+        <div class="youtube"><a href="Social/Youtube.html"><i class="fa-brands fa-youtube fa-shake"></i></a></div>
+        <div class="Instagram"><a href="Social/Instagram.html"><i class="fa-brands fa-instagram fa-shake"></i></a></div>
+      </div>
+    <section id="welcome" class="welcome">
+      <div class="animationcombo"> 
+    <div class="animation"> 
+     <div class="dot1"></div> 
+     <div class="dot2"></div> 
+     <div class="dot3"></div> 
+     <div class="dot4"></div> 
+     <div class="dot5"></div> 
+     <div class="dot6"></div> 
+     <div class="dot7"></div> 
+     <div class="dot8"></div> 
+     <div class="dot9"></div> 
+     <div class="dot10"></div> 
+     <div class="dot11"></div> 
+     <div class="dot12"></div> 
+     <div class="dot13"></div> 
+     <div class="dot14"></div> 
+     <div class="dot15"></div> 
+    </div> 
+    <div class="animation-1"> 
+     <div class="dot1"></div> 
+     <div class="dot2"></div> 
+     <div class="dot3"></div> 
+     <div class="dot4"></div> 
+     <div class="dot5"></div> 
+     <div class="dot6"></div> 
+     <div class="dot7"></div> 
+     <div class="dot8"></div> 
+     <div class="dot9"></div> 
+     <div class="dot10"></div> 
+     <div class="dot11"></div> 
+     <div class="dot12"></div> 
+     <div class="dot13"></div> 
+     <div class="dot14"></div> 
+     <div class="dot15"></div> 
+    </div> 
+   </div>
+      <div class="one">
+        <div class="inone">
+          welcome
+        </div>
+      </div>
+      <div class="itemice">
+        <div id="ice1" class="ice">❄</div>
+        <div id="ice2" class="ice">❄</div>
+        <div id="ice3" class="ice">❄</div>
+        <div id="ice4" class="ice">❄</div>
+        <div id="ice5" class="ice">❄</div>
+        <div id="ice6" class="ice">❄</div>
+        <div id="ice7" class="ice">❄</div>
+      </div>
+      <div class="itemice itemice2">
+        <div id="ice1" class="ice">❄</div>
+        <div id="ice3" class="ice">❄</div>
+        <div id="ice2" class="ice">❄</div>
+        <div id="ice4" class="ice">❄</div>
+        <div id="ice5" class="ice">❄</div>
+        <div id="ice6" class="ice">❄</div>
+        <div id="ice7" class="ice">❄</div>
+      </div>
+      <div class="itemice itemice3">
+        <div id="ice1" class="ice">❄</div>
+        <div id="ice3" class="ice">❄</div>
+        <div id="ice2" class="ice">❄</div>
+        <div id="ice4" class="ice">❄</div>
+        <div id="ice5" class="ice">❄</div>
+        <div id="ice6" class="ice">❄</div>
+        <div id="ice7" class="ice">❄</div>
+      </div>
+    </section>
+    <section id="info" class="welcome">
+      <div class="my_skill">
+        My Skill
+      </div>
+      <div class="info1_container">
+        <div class="result_box fa-bounce">
+          <div class="code_icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="persent">
+            98%
+          </div>
+        </div>
+        <div class="result_box">
+          <div class="code_icon"><i class="fa-brands fa-css3"></i></div>
+          <div class="persent">
+            90%
+          </div>
+        </div>
+        <div class="result_box">
+          <div class="code_icon"><i class="fa-brands fa-js"></i></div>
+          <div class="persent">
+            10%
+          </div>
+        </div>
+        <div class="result_box">
+          <div class="code_icon"><i class="fa-brands fa-github"></i></div>
+          <div class="persent">
+            46%
+          </div>
+        </div>
+        <div class="result_box">
+          <div class="code_icon">
+            <i class="fa-solid fa-terminal"></i>
+            </div>
+          <div class="persent">
+            40%
+          </div>
+        </div>
+        <div class="result_box">
+          <div class="code_icon">
+            <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+          <div class="persent">
+            16%
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info1" class="welcome">
+    </section>
+    <section id="info" class="welcome">
+    </section>
+    <section id="info2" class="welcome">
+    </section>
+ 
+<script src="App/App.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

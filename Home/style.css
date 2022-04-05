@@ -1,8 +1,13 @@
-
+@font-face {
+    font-family:myFirstFont;
+    src:url(https://dl.dropbox.com/s/dx4xr95jrm2dv6e/OperatorMono-MediumItalic.woff?dl=0);
+    font-weight: bold;
+  }
   * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+ font-family:myFirstFont;
 }
 body {
   background-color: #fff;
@@ -148,11 +153,6 @@ body {
     position: relative;
     flex-direction: column;
   }
-
-
-
-
-
 section {
    width: 100%;
    height: 110vh;
@@ -161,6 +161,12 @@ section {
    background-size: cover;
    background-attachment: fixed;
    background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .textstroke {
   text-stroke: 1px #87daef;
@@ -395,4 +401,25 @@ section {
   100% {
     transform: rotatez(360deg);
   }
+}
+.termuxcus {
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.photo {
+  width: 96%;
+  height: 110px;
+  position: relative;
+  margin: 10px auto;
+}
+.terpdf {
+  width: 140px;
+  padding: 10px;
+  background-color: #005dff;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
 }
