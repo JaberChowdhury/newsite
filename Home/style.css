@@ -412,6 +412,9 @@ section {
   height: 110px;
   position: relative;
   margin: 10px auto;
+  border: 1px solid black;
+  background-image:url('screenshot.jpg');
+  background-size: cover;
 }
 .terpdf {
   width: 140px;
