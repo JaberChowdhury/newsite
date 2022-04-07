@@ -14,3 +14,11 @@
         mn.style.transform = `rotateZ(${mm}deg)`;
         sc.style.transform = `rotateZ(${ss}deg)`;
     });
+    
+var label = document.querySelector ("#button");
+var night = document.querySelectorAll ("body")[0];
+
+label.addEventListener("click",function(){
+  label.classList.toggle("active");
+  night.classList.toggle("dark");
+})
