@@ -49,8 +49,9 @@ body {
     background-color: orange;
   }
   body.dark {
-    background-color: #0fffc8c0;
+    background-color: #666666;
     color: white;
+    box-shadow: none;
   }
   
 
@@ -480,4 +481,26 @@ section {
   color: white;
   text-align: center;
   border-radius: 20px;
+}
+.color-comb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+.color-comb > a{
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  width: 270px;
+  padding: 20px;;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+  transition: 0.2s;
+}
+.color-comb > a:active {
+  box-shadow: none;
 }

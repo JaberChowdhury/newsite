@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title></title>
+<style type="text/css" media="all">
+  @font-face {
+    font-family: myfont;
+    src: url("Operator_Mono.ttf");
+    font-weight: 900;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: myfont;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  header {
+    text-align: center;
+    font-weight: 1000;
+    font-size: 50px;
+    margin: 50px;
+    text-decoration: underline;
+  }
+  .container {
+    width: 80%;
+    height: 120px;
+    border-radius: 8px;
+    background: none;
+    box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;
+  }
+  .container::before {
+    content: " ";
+    position: absolute;
+    width: 120%;
+    height: 200px;
+    transform: rotatez(-15deg);
+    background: -webkit-linear-gradient(279deg, #d123b5, #2212ac);
+   
+}
+  .container::after {
+    content: " ";
+    position: absolute;
+    inset: 4px;
+    background: #e0e0e0;
+    z-index: 3;
+    border-radius: 8px;
+  }
+  
+  
+  .box {
+    width: 49.5%;
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    position: relative;
+    column-gap: 19px;
+    z-index: 4;
+  }
+  span {
+    max-width: 99%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow:  1px 1px 2px black,
+                -1px -1px 2px #ffffff;
+
+  }
+  @media (max-width:900px) {
+    .container {
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      position: relative;
+      grid-template-columns: auto;
+    }
+    .container::before {
+      left: -30px;
+    }
+    .box {
+      width: 299px;
+      height: 90%;
+      grid-template-columns: auto;
+      margin: 0px auto;
+      position: relative;
+    }
+    
+  }
+</style>
+  </head>
+  <body>
+  <header>
+    Color Combination
+  </header>
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#1E202D"></span>
+      <span  style="background-color:#50C4D3"></span>
+      <span id="code">#1E202D <br />rgb(30,32,45)</span>
+      <span id="code">#50C4D3 <br />rgb(80,192,211)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#1E202D,#50C4D3)">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#5294F5"></span>
+      <span  style="background-color:#CE1595"></span>
+      <span id="code">#5294F5 <br />rgb(82,148,245)</span>
+      <span id="code">#50C4D3 <br />rgb(206,21,149)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#5294F5,#CE1595)">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#000000"></span>
+      <span  style="background-color:#5BC2E5"></span>
+      <span id="code">#000000 <br />rgb(00,00,00)</span>
+      <span id="code">#5BC2E5 <br />rgb(91,194,229)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#000000,#5BC2E5)">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#F3006C"></span>
+      <span  style="background-color:#68009B"></span>
+      <span id="code">#F3006C <br />rgb(243,00,108)</span>
+      <span id="code">#68009B <br />rgb(104,00,155)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#F3006C,#68009B)">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#FDE102"></span>
+      <span  style="background-color:#F70C4E"></span>
+      <span id="code">#FDE102 <br />rgb(253,225,2)</span>
+      <span id="code">#F70C4E <br />rgb(247,12,78)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#FDE102,#F70C4E)">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#183C48"></span>
+      <span  style="background-color:#E5E9E8"></span>
+      <span id="code">#183C48 <br />rgb(24,60,72)</span>
+      <span id="code">#E5E9E8 <br />rgb(229,233,232)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#183C48,#E5E9E8)">
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="box">
+      <span style="background-color:#08083F"></span>
+      <span  style="background-color:#E810E7"></span>
+      <span id="code">#08083F <br />rgb(8,8,63)</span>
+      <span id="code">#E810E7 <br />rgb(232,16,231)</span>
+    </div>
+    <div class="box">
+      <div class="Color" style="background:-webkit-linear-gradient(left,#08083F,#E810E7)">
+      </div>
+    </div>
+  </div>
+  
+  <!--
+  <script type="text/javascript" charset="utf-8">
+    let HTMLBox = document.querySelector(".container");
+    let content = document.querySelectorAll("#code");
+    let contentv = content
+    console.log (contentv);
+    let test = document.querySelector ("header");
+    
+    HTMLBox.addEventListener("click",function() {
+      content.select(this.innerHTML);
+      document.execCommand("copy");
+      //HTMLButton.innerText = "Codes Copied"
+      test.innerHTML = content ;
+    })
+  </script>
+  -->
+  </body>
+</html>
